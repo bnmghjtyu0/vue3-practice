@@ -1,16 +1,18 @@
-
 <script setup>
-import { reactive,onMounted } from 'vue'
+import { onMounted } from 'vue'
+import MovieService from '../services/MovieService'
 
-const appInfo = reactive({
-    title: 'Home',
+
+onMounted(() => {
+    MovieService.getMovies().then(res => {
+        console.log(res)
+    }).catch(err => {
+        console.log(err)
+    })
 })
-
 </script>
 
 
-<template>
-    <h2>{{ appInfo.title }}</h2>
-</template>
+<template>123</template>
 
 
