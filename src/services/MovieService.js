@@ -15,4 +15,9 @@ export default {
       "/3/movie/now_playing?api_key=23785b1559bb39249c40d56934f80e6c&language=zh-TW&page=1"
     );
   },
+  getMovieDetail(id) {
+    return apiClient.get(
+      `https://api.themoviedb.org/3/movie/${id}?api_key=23785b1559bb39249c40d56934f80e6c`
+    );
+  },
 };

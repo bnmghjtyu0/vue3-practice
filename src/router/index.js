@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home";
 import About from "../views/About";
+import MovieDetail from "../views/MovieDetail";
 
 const routes = [
   {
@@ -15,6 +16,12 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited
     component: About,
+  },
+  {
+    path: "/movie-detail/:id",
+    name: "MovieDetail",
+    props: true, //Send routes params as component props
+    component: MovieDetail,
   },
   // {
   //   path: "/about",
