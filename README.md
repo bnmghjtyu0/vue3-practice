@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### View UI panel
+```
+vue ui
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
